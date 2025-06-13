@@ -1,0 +1,60 @@
+package PortalQueryREST;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$DEFINE REST}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  dbrtl,
+  FireDAC,
+  FireDACSqliteDriver,
+  FireDACCommonDriver,
+  FireDACCommon,
+  xmlrtl,
+  CustomIPTransport,
+  IndyIPCommon,
+  IndySystem,
+  IndyProtocols,
+  IndyCore,
+  IndyIPClient,
+  bindengine,
+  bindcomp,
+  RESTComponents,
+  vcl,
+  vclie,
+  vcldb,
+  dsnap;
+
+contains
+  UnitPortalQueryREST.Component in 'src\UnitPortalQueryREST.Component.pas',
+  UnitConfiguracaoServidor.Singleton in '..\..\FormsComuns\UnitConfiguracaoServidor.Singleton.pas',
+  UnitNavegadorWeb in '..\..\FormsComuns\Classes\NavegadorWeb\View\UnitNavegadorWeb.pas',
+  UnitFormBase in '..\..\FormsComuns\Herança\UnitFormBase.pas' {FrmBase},
+  UnitCorrigirJSNoWebBrowser.Model in '..\..\FormsComuns\Classes\NavegadorWeb\Model\UnitCorrigirJSNoWebBrowser.Model.pas';
+
+end.

@@ -1,0 +1,22 @@
+{
+	"hash": "81b1cca46d0b366c54868a88c672bb8d",
+	"updated": "2025-06-13T11:07:41.9558895-04:00",
+	"installedModules": {
+		"https://github.com/cachopaweb/clientrest": {
+			"name": "clientrest",
+			"version": "1.0.6",
+			"hash": "773498f141c034088b995dea485d2f44",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/viniciussanchez/dataset-serialize": {
+			"name": "dataset-serialize",
+			"version": "v2.5.9",
+			"hash": "62a95816d2cac761b15521c06fe43109",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		}
+	}
+}

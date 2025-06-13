@@ -1,0 +1,12 @@
+{
+	"name": "PortalQueryREST",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {
+		"https://github.com/cachopaweb/clientrest": "^1.0.6",
+		"https://github.com/viniciussanchez/dataset-serialize": "^v2.4.9"
+	}
+}
